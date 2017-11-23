@@ -9,36 +9,36 @@ package boletin9_5;
  *
  * @author dani
  */
-public class SerieC {
-    int numero, guardar,guardar2, suma;
-    
+public class SerieC{
+
+    int num, num1, num2, suma;
+
     public SerieC(){
-        
+
     }
-    
+
     public SerieC(int numero){
-        this.numero=numero;
+        this.num=numero;
     }
-    
-    public void metodo(int numero){
-        
-        for(int i=0;i<numero;i++){
+
+    public void fibonacci(int numero){
+
+        for(int i=0; i<numero; i++){
             if(i==0){
-                guardar=suma;
+                num1=suma;
                 suma++;
                 System.out.print(0+",");
+            }else{
+                num2=num1;
+                num1=suma;
+                suma=num1+num2;
             }
-            else
-            {   
-                guardar2=guardar;
-                guardar=suma;
-                suma=guardar+guardar2;
-            }
-            
-            if(i==(numero-1))
+
+            if(i==(numero-1)){
                 System.out.print(suma);
-            else
-            System.out.print(suma+",");
+            }else{
+                System.out.print(suma+",");
+            }
+        }
     }
-}
 }

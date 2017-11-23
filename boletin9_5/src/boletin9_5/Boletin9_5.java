@@ -11,25 +11,24 @@ import java.util.Scanner;
  *
  * @author dani
  */
-public class Boletin9_5 {
+public class Boletin9_5{
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args){
         Scanner scan=new Scanner(System.in);
         SerieA a=new SerieA();
         SerieB b=new SerieB();
         SerieC c=new SerieC();
-        
+
         System.out.println("Inserte un número:");
         int numero=scan.nextInt();
-        
-        a.metodo(numero);
-        b.metodo(numero);
-        c.metodo(numero);
-        
-        
+
+        a.sumarDos(numero);
+        b.cambiarSigno(numero);
+        c.fibonacci(numero);
+
     }
-    
+
 }

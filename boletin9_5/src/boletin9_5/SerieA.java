@@ -9,26 +9,29 @@ package boletin9_5;
  *
  * @author dani
  */
-public class SerieA {
-    
+public class SerieA{
+
     int numero;
-    
+
     public SerieA(){
-        
+
     }
-    
+
     public SerieA(int numero){
         this.numero=numero;
     }
-    
-    public void metodo(int numero){
-        int var=0;
-        for(int i=0;i<numero;i++){
-            var=var+2;
-            if(i==(numero-1))
-                System.out.println(var);
-            else 
-                System.out.print(var+"+");
+
+    public void sumarDos(int numero){
+        int contador=0;
+
+        for(int i=0; i<numero; i++){
+            contador=contador+2;
+            
+            if(i==(numero-1)){
+                System.out.println(contador);
+            }else{
+                System.out.print(contador+"+");
+            }
         }
     }
 }
